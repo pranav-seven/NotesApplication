@@ -1,5 +1,8 @@
 package com.conapp.notes.login;
 
+//**********************
+  UPDATE THE PATH NAMES IN NotesRepository BEFORE RUNNING
+  **********************//
 import java.io.IOException;
 
 import com.conapp.AbstractLoginView;
