@@ -28,7 +28,8 @@ public class NotesRepository {
     private NotesRepository()
     {
         userList = new ArrayList<>();
-        userFile = new File("C:\\Users\\_______\\eclipse-workspace\\FlightTicketBooking\\src\\com\\conapp\\notes\\repository\\userfile.txt");				//give the user folder name in the dash
+        userFile = new File("C:\\Users\\_______\\eclipse-workspace\\FlightTicketBooking\\src\\com\\conapp\\notes\\repository\\userfile.txt");
+        //give the user folder name in the dash
         try{
             userFile.createNewFile();
             reader = new BufferedReader(new FileReader(userFile));
@@ -53,7 +54,8 @@ public class NotesRepository {
 
     public void setPath(User user)
     {
-        path = "C:\\Users\\_______\\eclipse-workspace\\FlightTicketBooking\\src\\com\\conapp\\notes\\repository\\"+user.getUsername()+"\\";				//give the user folder name in the dash
+        path = "C:\\Users\\_______\\eclipse-workspace\\FlightTicketBooking\\src\\com\\conapp\\notes\\repository\\"+user.getUsername()+"\\";
+        //give the user folder name in the dash
         folder = new File(path);
         folder.mkdir();
         fileList = folder.listFiles();
